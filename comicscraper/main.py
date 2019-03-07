@@ -26,7 +26,7 @@ for i in range(0, len(issue_urls)):
 for indiv_url in issue_urls:
     indiv_url_source = requests.get(indiv_url).text
     indiv_soup = BeautifulSoup(indiv_url_source, "lxml")
-    img_url = indiv_soup.find("img", class_="pi-image-thumbnail")["src"]
+    img_url = indiv_soup.find("a", class_="image image-thumbnail")["href"]
 
     requests_img_url = requests.get(img_url)
 
