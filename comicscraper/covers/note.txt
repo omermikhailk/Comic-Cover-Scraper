@@ -1,2 +1,0 @@
-This file is only here so that this folder shows up. This folder
-is where all of your comic cover images will be downloaded.
